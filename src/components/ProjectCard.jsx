@@ -7,7 +7,7 @@ export default function ProjectCard(props) {
  const { title, icon, linkDeploy, linkRepository } = props
 
   return (
-    <div onClick={() => setOnHover(!onHover)} onMouseOver={() => setOnHover(true)} onMouseOut={() => setOnHover(false)} className={`w-[20%] ${onHover ? 'z-10 border-white transition-transform duration-1000 ease-out overflow-y-none scale-110 w-[20%] delay-100' : 'z-0 transition-transform duration-1000 ease-out scale-100 delay-100'} sm:w-[100%] md:w-[70%]`}  key={title}>
+    <div onClick={() => setOnHover(!onHover)} onMouseOver={() => setOnHover(true)} onMouseOut={() => setOnHover(false)} className={`mt-20 w-[20%] ${onHover ? 'z-10 border-white transition-transform duration-1000 ease-out overflow-y-none scale-110 w-[20%] delay-100' : 'z-0 transition-transform duration-1000 ease-out scale-100 delay-100'} sm:w-[100%] md:w-[70%]`}  key={title}>
       <div className='flex justify-center items-center sm:mt-10'>
       <img className={`w-[100%]  ${onHover ? 'opacity-100 rounded-b-none cursor-pointer' : 'opacity-20'} rounded-md sm:opacity-60`} src={icon} alt={title} />
     <h2 className={`${onHover && 'hidden'} text-center p-2 absolute top-[45%] text-white opacity-100 z-10 text-xl font-dmsans text-titles `}>{title}</h2>
