@@ -71,7 +71,7 @@ export default function Skills() {
   } ]
 
   return (
-    <div className='flex flex-col items-center gap-5'>
+    <div className='flex flex-col items-center gap-20'>
       <h1 className='text-3xl font-dmsans text-titles'>Habilidades</h1>
       <section className='flex mx-20 gap-10  flex-wrap justify-center'>
         {skills.map((skill) => {

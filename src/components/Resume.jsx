@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import MyPhoto from '../images/MyPhoto.png'
+import CV from '../documents/PedroMedeiros.pdf'
 
 export default function Resume() {
   const firstAnimation = 'first-animation cursor-border';
@@ -26,8 +27,8 @@ export default function Resume() {
       <p className={`${className === 3 ? thirdAnimation : ''} ${className < 3 ? 'hidden' : ''} line-resume font-dmsans text-content font-medium`}>  Desenvolvedor Front-End
       </p>
         <section className="flex items-stretch gap-5">
-            <button className="p-2 px-5  text-xs rounded-full cv-button">Download CV</button>
-            <button className="p-2 px-5  text-xs rounded-full contact-button">Entrar em contato</button>
+        <a className='p-2 px-5  text-xs rounded-full cv-button' href={CV} download>Download CV</a>
+        <a className='p-2 px-5  text-xs rounded-full contact-button' href='mailto:pedroaugmed7@gmail.com' target='blank'>Entrar em contato</a>
         </section>
     </div>
     <div className='flex w-[100%] items-center justify-end'>

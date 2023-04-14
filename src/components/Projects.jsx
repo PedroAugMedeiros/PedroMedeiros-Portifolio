@@ -1,70 +1,45 @@
-import React, { useState } from 'react'
-import JsIcon from '../images/MyPhoto.png'
-import HtmlIcon from '../images/MyPhoto.png'
+import React from 'react'
+import ProjectCard from './ProjectCard'
+import ComicsFlixBanner from '../images/comicsFlixBanner.png'
+import MyPokedexBanner from '../images/myPokedexBanner.png'
+import EasyRecipesBanner from '../images/easyRecipesBanner.png'
 
 export default function Projects() {
-  // const [showAllProjects, setShowAllProjects] = useState(false)
+
   const projects = [{
-    title: 'JavaScript',
-    icon: JsIcon, 
+    title: 'ComicsFlix',
+    icon: ComicsFlixBanner,
+    linkDeploy: 'https://comicsflix.netlify.app',
+    linkRepository: 'https://github.com/PedroAugMedeiros/comicsflix',
   }, {
-    title: 'Html',
-    icon: HtmlIcon 
+    title: 'My Pokedex',
+    icon: MyPokedexBanner,
+    linkDeploy: 'https://mypokedexx.netlify.app',
+    linkRepository: 'https://github.com/PedroAugMedeiros/My-Pokedex',
   }, {
-    title: 'JavaScript',
-    icon: JsIcon 
-  }, {
-    title: 'Html',
-    icon: HtmlIcon 
-  }, {
-    title: 'JavaScript',
-    icon: JsIcon 
-  }, {
-    title: 'Html',
-    icon: HtmlIcon 
-  }, {
-    title: 'JavaScript',
-    icon: JsIcon 
-  }, {
-    title: 'Html',
-    icon: HtmlIcon 
-  }, {
-    title: 'JavaScript',
-    icon: JsIcon 
-  }, {
-    title: 'Html',
-    icon: HtmlIcon 
-  }, {
-    title: 'JavaScript',
-    icon: JsIcon 
-  }, {
-    title: 'Html',
-    icon: HtmlIcon 
-  } ]
+    title: 'Easy Recipes',
+    icon: EasyRecipesBanner,
+    linkDeploy: 'https://easyrecipes-eight.vercel.app',
+    linkRepository: 'https://github.com/PedroAugMedeiros/ProjectRecipesApp', 
+  },]
+  
   return (
-    <div className='flex flex-col gap-5'>
-      <h1 className='text-center'>Projects</h1>
-      <section className='flex flex-wrap gap-20 mx-10'>
+    <div className='flex flex-col gap-10'>
+      <h1 className='text-center text-3xl font-dmsans text-titles'>Projetos</h1>
+      <div className='w-[10%] text-3xl font-dmsans text-titles ml-20'>
+      <h2>Destaques</h2>
+      <div className='borderGradientProjects'></div>
+      </div>
+
+      <section className='flex flex-wrap gap-5 justify-around items-center'>
       {projects.map((project) => {
         return (
-          <div key={project.title} className='flex flex-col gap-5 w-[20%]'>
-                        <h2 className='text-center'>{project.title}</h2>
-            <img className='w-[100%]' src={project.icon} alt={project.title} />
-          </div>
+            <ProjectCard key={project.title} title={project.title} icon={project.icon} linkRepository={project.linkRepository} linkDeploy={project.linkDeploy}/>
         )
       })}
       </section>
-      {/* <section className='align-start' >
-      <div className='flex flex-row gap-2 justify-start'>
-      <button onClick={() => setShowAllProjects(false)}>Destaques</button>
-      |
-      <button onClick={() => setShowAllProjects(true)}>Todos os Projetos</button>
-      </div>
-      </section>
- <section>
-        {showAllProjects ? renderProjects(allProjects) : renderProjects(highligthProjects)}
-      </section>
-  */}
+      <div className='flex justify-center mt-10'><a className='w-[70%] p-2 cv-button' href='https://github.com/PedroAugMedeiros?tab=repositories' target='blank'><button className=''>Ver Mais Projetos</button></a></div>
+   
     </div>
 
   )

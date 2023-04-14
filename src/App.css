@@ -17,6 +17,12 @@
   border-image-slice: 1;
 }
 
+.borderGradientProjects {
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
+  border-image-slice: 1;
+}
+
 .cv-button {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
@@ -42,6 +48,17 @@
   transition: 0.3s;
 }
 
+.project-buttons {
+  font-family: 'DM Sans', sans-serif;
+  border-radius: 2rem;
+  color: #F9F9F9;
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
 .cv-button:hover {
     padding: 1.0em 2.0rem;
     background-image: linear-gradient(90deg, rgba(130,87,230,0.8) .2%, rgba(121,48,190,0.648) 100%);
@@ -62,6 +79,16 @@
   transition: 0.3s;
 }
 
+.project-buttons:hover {
+  padding: 1.0em 2.0rem;
+  background-image: linear-gradient(90deg, rgba(130,87,230,0.8) .2%, rgba(121,48,190,0.648) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
 .cursor-border {
   border-right: 3px solid white;
 }
@@ -69,6 +96,14 @@
 .line-resume {
   white-space: nowrap;
   overflow: hidden;
+}
+
+.onHoverProject {
+  background-image: linear-gradient(90deg, rgba(130,87,230,0.8) .2%, #A40EE4 92.32%);
+}
+
+.titleProject {
+  background-image: linear-gradient(90deg, rgba(130,87,230,0.8) .2%, #A40EE4 92.32%);
 }
 
 .first-animation {
