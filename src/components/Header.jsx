@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function Header() {
-  const [openMenu, setOpenMenu] = useState(false)
+
   return (
     <div>
     <section className='flex gap-5 justify-around py-4'>

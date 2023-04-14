@@ -32,7 +32,7 @@ export default function Resume() {
         </section>
     </div>
     <div className='flex w-[100%] items-center justify-end sm:justify-center md:w-[50%]'>
-        <img className='w-[60%] rounded-full bg-purple-600 m-0 mr-0 md:w-[100%]' src={MyPhoto}></img>
+        <img className='w-[60%] rounded-full bg-purple-600 m-0 mr-0 md:w-[100%]' src={MyPhoto} alt='myPhoto'></img>
     </div>
     </section>
   )

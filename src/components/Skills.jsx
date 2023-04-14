@@ -77,7 +77,7 @@ export default function Skills() {
         {skills.map((skill) => {
           return (<div className='flex flex-col gap-4 items-center bg-[#212121] justify-center py-3 w-[9%] rounded-tl-3xl borderGradientSkills sm:w-[40%] md:w-[20%]'>
             <h1 className='text-purple-content font-dmsans text-center font-medium text-sm md:text-xl'>{skill.title}</h1>
-            <img className='w-[49%]' src={skill.icon}/>
+            <img className='w-[49%]' src={skill.icon} alt={skill.title}/>
           </div>)
         })}
       </section>
