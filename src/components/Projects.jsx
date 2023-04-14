@@ -24,21 +24,21 @@ export default function Projects() {
   },]
   
   return (
-    <div className='flex flex-col gap-10'>
-      <h1 className='text-center text-3xl font-dmsans text-titles'>Projetos</h1>
-      <div className='w-[10%] text-3xl font-dmsans text-titles ml-20'>
+    <div className='flex flex-col gap-10 overflow-y-hidden'>
+      <h1 className='text-center text-[200%] font-dmsans text-titles md:text-[260%]'>Projetos</h1>
+      <div className='w-[10%] text-[150%] font-dmsans text-titles ml-20 sm:w-[40%] sm:ml-10 md:ml-10 md:w-[20%] md:text-[200%]'>
       <h2>Destaques</h2>
       <div className='borderGradientProjects'></div>
       </div>
 
-      <section className='flex flex-wrap gap-5 justify-around items-center'>
+      <section className='flex flex-wrap gap-5 justify-around items-center sm:flex-col sm:justify-center sm:items-center sm:mx-5 md:flex-col md:justify-center md:items-center md:mx-5 md:gap-20 overflow-y-hidden'>
       {projects.map((project) => {
         return (
             <ProjectCard key={project.title} title={project.title} icon={project.icon} linkRepository={project.linkRepository} linkDeploy={project.linkDeploy}/>
         )
       })}
       </section>
-      <div className='flex justify-center mt-10'><a className='w-[70%] p-2 cv-button' href='https://github.com/PedroAugMedeiros?tab=repositories' target='blank'><button className=''>Ver Mais Projetos</button></a></div>
+      <div className='flex justify-center mt-10'><a className='w-[70%] p-2 cv-button md:p-10 md:text-[250%]' href='https://github.com/PedroAugMedeiros?tab=repositories' target='blank'><button className=''>Ver Mais Projetos</button></a></div>
    
     </div>
 

@@ -8,10 +8,10 @@ import Resume from "../components/Resume";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-5 bg-[#13131F]">
+    <div className="flex flex-col gap-5 bg-[#13131F] overflow-y-auto">
       <Header />
       <Resume />
-      <section className="flex flex-col gap-40">
+      <section className="flex flex-col gap-40 sm:gap-20">
         <About />
         <Skills />
         <Projects />

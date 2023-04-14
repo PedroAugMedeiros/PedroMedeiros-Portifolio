@@ -72,12 +72,12 @@ export default function Skills() {
 
   return (
     <div className='flex flex-col items-center gap-20'>
-      <h1 className='text-3xl font-dmsans text-titles'>Habilidades</h1>
+      <h1 className='text-[200%] font-dmsans text-titles md:text-[260%]'>Habilidades</h1>
       <section className='flex mx-20 gap-10  flex-wrap justify-center'>
         {skills.map((skill) => {
-          return (<div className='flex flex-col gap-4 items-center bg-[#212121] justify-center py-3 w-[9%] rounded-tl-3xl borderGradientSkills'>
-            <h1 className='text-purple-content font-dmsans text-center font-medium text-sm'>{skill.title}</h1>
-            <img className='w-[30%]' src={skill.icon}/>
+          return (<div className='flex flex-col gap-4 items-center bg-[#212121] justify-center py-3 w-[9%] rounded-tl-3xl borderGradientSkills sm:w-[40%] md:w-[20%]'>
+            <h1 className='text-purple-content font-dmsans text-center font-medium text-sm md:text-xl'>{skill.title}</h1>
+            <img className='w-[49%]' src={skill.icon}/>
           </div>)
         })}
       </section>

@@ -30,13 +30,14 @@ export default function Contacts() {
 
   return (
     <div className='flex flex-col items-center gap-5'>
-      <h1 className='text-center text-3xl font-dmsans text-titles'>Contatos</h1>
-      <section className='flex gap-20 items-center m-10 mx-20'>
+      <h1 className='text-center text-[200%] font-dmsans text-titles md:text-[260%]'>Contatos</h1>
+      <section className='flex gap-20 items-center m-10 mx-20 sm:flex-col sm:gap-10 md:flex-wrap md:justify-center md:mx-5'>
         {contacts.map((contact) => 
-                <div className='flex flex-col items-center justify-center'>
-                <a href={contact.link} target='blank'><div className='rounded-full bg-[#212121] mb-3'><img className='p-3' src={contact.icon} alt={contact.icon}/></div></a>
-                <h2 className='text-[#F9F9F9]  line-resume font-dmsans'>{contact.title}</h2>
-                <h3 className='text-[#828282] line-resume font-dmsans'>{contact.content}</h3>
+                // <div className='flex flex-col items-center justify-center md:w-[200%]'>
+                <div className='flex flex-col items-center justify-center md:w-[42%]'>
+                <a className='md:w-[60%]' href={contact.link} target='blank'><div className='rounded-full bg-[#212121] mb-3'><img className='p-3  md:w-[100%] md:p-8' src={contact.icon} alt={contact.icon}/></div></a>
+                <h2 className='text-[#F9F9F9]  line-resume font-dmsans md:text-3xl'>{contact.title}</h2>
+                <h3 className='text-[#828282] line-resume font-dmsans md:text-xl'>{contact.content}</h3>
               </div>)}
 
       </section>
