@@ -24,7 +24,7 @@ export default function Resume() {
       </p>
       <p className={`${className === 2 ? secondAnimation : ''} ${className < 2 ? 'hidden' : ''}  line-resume font-poppins text-4xl text-purple-content sm:text-[150%] md:text-[250%]`}>  Pedro Medeiros
       </p>
-      <p className={`${className === 3 ? thirdAnimation : ''} ${className < 3 ? 'hidden' : ''} line-resume font-dmsans text-content font-medium md:text-[200%]`}>  Desenvolvedor
+      <p className={`${className === 3 ? thirdAnimation : ''} ${className < 3 ? 'hidden' : ''} line-resume font-dmsans text-content font-medium md:text-[200%]`}>  Desenvolvedor Frontend
       </p>
         <section className="flex items-stretch gap-5 sm:flex-col sm:w-[90%]">
         <a className='p-2 px-5  text-xs rounded-full cv-button md:text-xl md:p-4' href={CV} download>Download CV</a>
