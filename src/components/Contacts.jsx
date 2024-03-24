@@ -13,7 +13,7 @@ export default function Contacts() {
   }, {
     title: 'Telefone',
     icon: PhoneIcon,
-    content: '(31) 99226-2115',
+    content: '(31) 97351-8584',
     link: 'https://wa.me/5531992262115',
   },
   {
