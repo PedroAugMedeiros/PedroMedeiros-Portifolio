@@ -20,7 +20,7 @@ export default function Contacts() {
     title: 'Linkedin',
     icon: LinkedinIcon,
     content: 'pedroaugmed',
-    link: 'https://www.linkedin.com/in/pedroaugmed/',
+    link: 'https://www.linkedin.com/in/pedro-augusto-medeiros/',
   },{
     title: 'Github',
     icon: GitHubIcon,
